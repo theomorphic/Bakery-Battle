@@ -1,0 +1,409 @@
+#modal-result-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+#modal-result-wrapper #overlay {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#modal-result-wrapper #overlay #modal-window {
+  width: 300px;
+  height: 80px;
+  border: 3px solid black;
+  background-color: bisque;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 30px;
+}
+
+#modal-result-wrapper #overlay #modal-window #content {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 300px;
+  height: 40px;
+  padding: 20px;
+  font-size: 20px;
+}
+
+#modal-result-wrapper #overlay #modal-window #btn-close {
+  width: 300px;
+  height: 40px;
+  background-color: #A87B45;
+  color: black;
+  cursor: pointer;
+  font-size: 30px;
+  border: 3px solid black;
+  padding: 20px;
+  font-size: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+ul {
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  padding: 0;
+  background-color: bisque;
+}
+
+ul li {
+  list-style: none;
+  width: 200px;
+  border-radius: 20%;
+}
+
+ul li a {
+  display: block;
+  padding: 5px;
+  text-align: center;
+  color: black;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.slide {
+  position: absolute;
+  width: 200px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #E0B179;
+  z-index: -1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 0;
+  border-radius: 20%;
+}
+
+ul li.active a {
+  color: #262626;
+}
+
+ul li:nth-child(1).active ~ .slide {
+  left: 0;
+  opacity: 1;
+}
+
+ul li:nth-child(2).active ~ .slide {
+  left: 200px;
+  opacity: 1;
+}
+
+ul li:nth-child(3).active ~ .slide {
+  left: 400px;
+  opacity: 1;
+}
+
+footer {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  height: auto;
+  width: 100vw;
+  left: 0;
+  right: 0;
+  padding-top: 300px;
+}
+
+footer .footer-content {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+footer .footer-content h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+
+footer .footer-content p {
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 16px;
+}
+
+footer .footer-content .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+
+footer .footer-content .socials li {
+  margin: 0 10px;
+}
+
+footer .footer-content .socials a, footer .footer-content .socials img {
+  text-decoration: none;
+}
+
+footer .footer-content .socials a i, footer .footer-content .socials a img, footer .footer-content .socials img i, footer .footer-content .socials img img {
+  font-size: 1.4rem;
+}
+
+footer .footer-content .socials a:hover i {
+  -webkit-transition: color .4s ease;
+  transition: color .4s ease;
+}
+
+footer .footer-content .socials a:hover img {
+  -webkit-transition: color .4s ease;
+  transition: color .4s ease;
+}
+
+footer .footer-bottom {
+  width: 100vw;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer .footer-bottom p {
+  font-size: 16px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+
+footer .footer-bottom span {
+  text-transform: lowercase;
+  opacity: .4;
+  font-weight: 200;
+  font-size: 16px;
+}
+
+body {
+  background-color: bisque;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px;
+  margin-bottom: 3%;
+  background-color: #E0B179;
+}
+
+header h1 {
+  font-size: 40px;
+  letter-spacing: 5px;
+}
+
+main .main-area {
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  max-width: 750px;
+  margin: auto;
+  padding: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #ffe4c4;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-image: url(img/BB-Background.png);
+  background-repeat: no-repeat;
+}
+
+main .enemies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 6%;
+  max-width: 1200px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .enemies .enemy {
+  background-image: url(img/Muffin-Boss.png);
+  background-repeat: no-repeat;
+  width: 160px;
+  height: 160px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10%;
+}
+
+main .enemies .enemy:hover {
+  background-image: url(img/Muffin-Boss-Angry.png);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+main .enemies .enemy-text {
+  margin-left: 30px;
+  text-align: center;
+}
+
+main .enemies .enemy-text p {
+  line-height: 25px;
+}
+
+main .area-wrapper {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 6%;
+}
+
+main .area-wrapper #area {
+  width: 300px;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .area-wrapper #area .box {
+  width: 100px;
+  height: 100px;
+  background-color: blanchedalmond;
+  border: 2px solid black;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 34px;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  border-radius: 5%;
+  border-color: #42231e;
+  border-width: 3px;
+}
+
+main .area-wrapper #area .box:hover {
+  background-color: #E0B179;
+}
+
+main .area-wrapper #area .box:active {
+  background-color: #765C3D;
+}
+
+.thebuttons {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 600px;
+  margin-left: 320px;
+}
+
+footer {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+/*# sourceMappingURL=style.css.map */

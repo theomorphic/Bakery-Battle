@@ -1,0 +1,63 @@
+ul {
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  padding: 0;
+  background-color: bisque;
+}
+
+ul li {
+  list-style: none;
+  width: 200px;
+  border-radius: 20%;
+}
+
+ul li a {
+  display: block;
+  padding: 5px;
+  text-align: center;
+  color: black;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.slide {
+  position: absolute;
+  width: 200px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #E0B179;
+  z-index: -1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 0;
+  border-radius: 20%;
+}
+
+ul li.active a {
+  color: #262626;
+}
+
+ul li:nth-child(1).active ~ .slide {
+  left: 0;
+  opacity: 1;
+}
+
+ul li:nth-child(2).active ~ .slide {
+  left: 200px;
+  opacity: 1;
+}
+
+ul li:nth-child(3).active ~ .slide {
+  left: 400px;
+  opacity: 1;
+}
+/*# sourceMappingURL=buttons.css.map */

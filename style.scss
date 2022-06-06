@@ -1,0 +1,140 @@
+@import "./scss/window";
+@import "./scss/buttons.scss";
+@import "./scss/footer.scss";
+
+body{
+	background-color: bisque;
+	font-family: 'Press Start 2P', cursive;
+	font-size: 14px;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	overflow-x: hidden;
+	margin: 0;
+	padding: 0;
+}
+
+header{
+	display: flex;
+	flex: 0 0 auto;
+	justify-content: center;
+	padding: 10px;
+	margin-bottom: 3%;
+	background-color: #E0B179;
+
+		h1{
+			font-size: 40px;
+			letter-spacing: 5px;
+		}
+}
+
+main{
+	.main-area{
+		position: relative;
+		flex: 1 0 auto;
+		max-width: 750px;
+		margin: auto;
+		padding: 20px;
+		justify-content: center;
+		background-color: #ffe4c4;
+		box-sizing: border-box;
+		background-image: url(img/BB-Background.png);
+		background-repeat: no-repeat;
+	}
+
+	.enemies{
+		display: flex;
+		margin-bottom: 6%;
+		max-width: 1200px;
+		align-items: center;
+		justify-content: center;
+		
+
+		.enemy{
+			background-image: url(img/Muffin-Boss.png);
+			background-repeat: no-repeat;
+			width: 160px;
+			height: 160px;
+			justify-content: center;
+			align-items: center;
+			border-radius: 10%;
+		}
+
+		.enemy:hover{
+			background-image: url(img/Muffin-Boss-Angry.png);
+			transition: all 0.3s ease;
+		}
+
+		.enemy-text{
+			margin-left: 30px;
+			text-align: center;
+			p{
+				line-height: 25px;
+			}			
+		}
+
+	}
+
+	.area-wrapper{
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 6%;
+
+		#area{
+			width: 300px;
+			height: 300px;
+			display: flex;
+			flex-wrap: wrap;
+			.box{
+				width: 100px;
+				height: 100px;
+				background-color: blanchedalmond;
+				border: 2px solid black;
+				box-sizing: border-box;
+				font-size: 34px;
+				color: black;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				font-weight: bold;
+				cursor: pointer;
+				transition: all 0.4s ease;
+				border-radius: 5%;
+				border-color: #42231e;
+				border-width: 3px;
+				
+
+			}
+			
+			.box:hover{
+				background-color: #E0B179;
+			}
+			
+			.box:active{
+				background-color: #765C3D;
+			 }
+		}
+
+	}
+}
+
+.thebuttons{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 600px;
+	margin-left: 320px;
+}
+
+    
+footer{
+	flex: 0 0 auto;
+}
+    
+
+  
