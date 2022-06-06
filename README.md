@@ -7,3 +7,5 @@
 * agaisnt **Milky**, wich is an easy level with AI player;
 
 Choose your destiny and a field cell. And don't forget **to star the game!**
+
+Let's see you have a try: https://theomorphic.github.io/Bakery-Battle/
