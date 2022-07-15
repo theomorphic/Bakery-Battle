@@ -1,3 +1,4 @@
+@import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
 #modal-result-wrapper {
   width: 100%;
   height: 100%;
@@ -251,17 +252,113 @@ header {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   padding: 10px;
   margin-bottom: 3%;
   background-color: #E0B179;
 }
 
+header nav {
+  width: 960px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 header h1 {
   font-size: 40px;
   letter-spacing: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .lang-menu {
+  margin: 20px;
+  position: relative;
+}
+
+header .lang-menu ul {
+  margin: 0;
+  padding: 0;
+  border: 2px solid black;
+  border-radius: 5%;
+  display: none;
+  position: absolute;
+  top: 70px;
+  left: 62px;
+  width: 150px;
+}
+
+header .lang-menu ul li {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .lang-menu ul li a {
+  width: 125px;
+  padding: 5px 10px;
+  display: block;
+  text-decoration: none;
+}
+
+header .lang-menu ul li a:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 49px;
+  height: 32px;
+  margin: 5px;
+  margin-right: 10px;
+  background-image: url(/img/Royal_Standard_of_England2.png);
+}
+
+header .lang-menu ul li .ch:before {
+  background-image: url(/img/Flag_of_China2.png);
+}
+
+header .lang-menu ul li:hover {
+  background-color: #E0B179;
+  cursor: pointer;
+}
+
+header .lang-menu:hover ul {
+  display: block;
+}
+
+header .selected-lang {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+}
+
+header .selected-lang::before {
+  content: '';
+  display: block;
+  width: 49px;
+  height: 32px;
+  margin: 5px;
+  border-radius: 5%;
+  background-image: url(/img/Royal_Standard_of_England2.png);
 }
 
 main .main-area {
@@ -375,6 +472,8 @@ main .area-wrapper #area .box {
   border-radius: 5%;
   border-color: #42231e;
   border-width: 3px;
+  -webkit-box-shadow: 0px 1px 5px black;
+          box-shadow: 0px 1px 5px black;
 }
 
 main .area-wrapper #area .box:hover {
@@ -405,5 +504,6 @@ footer {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
+  background-color: #E0B179;
 }
 /*# sourceMappingURL=style.css.map */

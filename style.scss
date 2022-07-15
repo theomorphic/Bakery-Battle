@@ -2,6 +2,8 @@
 @import "./scss/buttons.scss";
 @import "./scss/footer.scss";
 
+@import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
+
 body{
 	background-color: bisque;
 	font-family: 'Press Start 2P', cursive;
@@ -17,14 +19,23 @@ body{
 header{
 	display: flex;
 	flex: 0 0 auto;
-	justify-content: center;
+	
 	padding: 10px;
 	margin-bottom: 3%;
 	background-color: #E0B179;
 
+	nav{
+		width: 960px;
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
 		h1{
 			font-size: 40px;
 			letter-spacing: 5px;
+			align-items: center;
 		}
 }
 
@@ -72,7 +83,6 @@ main{
 				line-height: 25px;
 			}			
 		}
-
 	}
 
 	.area-wrapper{
@@ -105,6 +115,8 @@ main{
 				border-radius: 5%;
 				border-color: #42231e;
 				border-width: 3px;
+				box-shadow: 0px 1px 5px rgba($color: #000000, $alpha: 1.0);
+
 				
 
 			}
@@ -134,7 +146,5 @@ main{
     
 footer{
 	flex: 0 0 auto;
+	background-color: #E0B179;
 }
-    
-
-  
