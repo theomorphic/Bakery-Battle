@@ -1,54 +1,67 @@
 @import "./scss/window";
 @import "./scss/buttons.scss";
-@import "./scss/footer.scss";
+// @import "./scss/footer.scss";
 
 @import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
 
-body{
-	background-color: bisque;
-	font-family: 'Press Start 2P', cursive;
-	font-size: 14px;
-	display: flex;
-	flex-direction: column;
-	height: 100%;
-	overflow-x: hidden;
+*{
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 
-header{
+html{
+	font-size: 14px;
+	font-family: 'Press Start 2P', cursive;
+	background-color: bisque;
+}
+
+body{
+	min-width: 800px;
+	width: 100%;
+	margin: auto;
+	min-height: 100vh;
 	display: flex;
-	flex: 0 0 auto;
-	
-	padding: 10px;
-	margin-bottom: 3%;
+	flex-direction: column;
+	overflow-x: hidden;
+}
+
+header,
+footer{
+	width: inherit;
+	min-width: inherit;
+	padding: 1rem;
 	background-color: #E0B179;
 
 	nav{
-		width: 960px;
 		margin: 0 auto;
 		display: flex;
 		justify-content: center;
-		align-items: center;
 	}
 
 		h1{
 			font-size: 40px;
 			letter-spacing: 5px;
-			align-items: center;
 		}
 }
 
+header{
+	top: 0;
+}
+
+footer{
+	bottom: 0;
+}
+
 main{
-	.main-area{
-		position: relative;
-		flex: 1 0 auto;
+	flex-grow: 1;
+	padding: 120px 1rem;
+
+	.main-header{
 		max-width: 750px;
 		margin: auto;
-		padding: 20px;
 		justify-content: center;
 		background-color: #ffe4c4;
-		box-sizing: border-box;
 		background-image: url(img/BB-Background.png);
 		background-repeat: no-repeat;
 	}
@@ -56,7 +69,6 @@ main{
 	.enemies{
 		display: flex;
 		margin-bottom: 6%;
-		max-width: 1200px;
 		align-items: center;
 		justify-content: center;
 		
@@ -66,9 +78,6 @@ main{
 			background-repeat: no-repeat;
 			width: 160px;
 			height: 160px;
-			justify-content: center;
-			align-items: center;
-			border-radius: 10%;
 		}
 
 		.enemy:hover{
@@ -79,6 +88,10 @@ main{
 		.enemy-text{
 			margin-left: 30px;
 			text-align: center;
+
+			h2{
+				margin-bottom: 10px;
+			}
 			p{
 				line-height: 25px;
 			}			
@@ -98,6 +111,7 @@ main{
 			height: 300px;
 			display: flex;
 			flex-wrap: wrap;
+
 			.box{
 				width: 100px;
 				height: 100px;
@@ -145,6 +159,5 @@ main{
 
     
 footer{
-	flex: 0 0 auto;
 	background-color: #E0B179;
 }

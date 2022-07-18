@@ -1,90 +1,63 @@
 footer {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
+  flex: 0 0 auto;
   height: auto;
   width: 100vw;
   left: 0;
   right: 0;
   padding-top: 300px;
 }
-
 footer .footer-content {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
-
 footer .footer-content h3 {
   font-size: 1.8rem;
   font-weight: 400;
   text-transform: capitalize;
   line-height: 3rem;
 }
-
 footer .footer-content p {
   max-width: 500px;
   margin: 10px auto;
   line-height: 28px;
   font-size: 16px;
 }
-
 footer .footer-content .socials {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   list-style: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   margin: 1rem 0 3rem 0;
 }
-
 footer .footer-content .socials li {
   margin: 0 10px;
 }
-
 footer .footer-content .socials a, footer .footer-content .socials img {
   text-decoration: none;
 }
-
 footer .footer-content .socials a i, footer .footer-content .socials a img, footer .footer-content .socials img i, footer .footer-content .socials img img {
   font-size: 1.4rem;
 }
-
 footer .footer-content .socials a:hover i {
-  -webkit-transition: color .4s ease;
-  transition: color .4s ease;
+  transition: color 0.4s ease;
 }
-
 footer .footer-content .socials a:hover img {
-  -webkit-transition: color .4s ease;
-  transition: color .4s ease;
+  transition: color 0.4s ease;
 }
-
 footer .footer-bottom {
   width: 100vw;
   padding: 20px 0;
   text-align: center;
 }
-
 footer .footer-bottom p {
   font-size: 16px;
   word-spacing: 2px;
   text-transform: capitalize;
 }
-
 footer .footer-bottom span {
   text-transform: lowercase;
-  opacity: .4;
+  opacity: 0.4;
   font-weight: 200;
   font-size: 16px;
-}
-/*# sourceMappingURL=footer.css.map */
+}/*# sourceMappingURL=footer.css.map */
