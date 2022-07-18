@@ -51,11 +51,12 @@ header{
 
 footer{
 	bottom: 0;
+	height: 100px;
 }
 
 main{
 	flex-grow: 1;
-	padding: 120px 1rem;
+	padding: 3rem;
 
 	.main-header{
 		max-width: 750px;
@@ -158,6 +159,3 @@ main{
 }
 
     
-footer{
-	background-color: #E0B179;
-}

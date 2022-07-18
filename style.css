@@ -158,11 +158,12 @@ header {
 
 footer {
   bottom: 0;
+  height: 100px;
 }
 
 main {
   flex-grow: 1;
-  padding: 120px 1rem;
+  padding: 3rem;
 }
 main .main-header {
   max-width: 750px;
@@ -246,8 +247,4 @@ main .area-wrapper #area .box:active {
   align-items: center;
   max-width: 600px;
   margin-left: 320px;
-}
-
-footer {
-  background-color: #E0B179;
 }/*# sourceMappingURL=style.css.map */
