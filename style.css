@@ -277,7 +277,7 @@ main .area-wrapper #area .box:active {
   display: block;
   width: 49px;
   height: 32px;
-  background-image: url(/img/Royal_Standard_of_England2.png);
+  background-image: url(img/Royal_Standard_of_England2.png);
   border-radius: 5%;
 }
 .switchers .lang-menu ul {
