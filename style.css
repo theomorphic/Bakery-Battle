@@ -277,7 +277,7 @@ main .area-wrapper #area .box:active {
   display: block;
   width: 49px;
   height: 32px;
-  background-image: url(./img/Royal_Standard_of_England2.png);
+  background-image: url(./img/England2.png);
   border-radius: 5%;
 }
 .switchers .lang-menu ul {
@@ -317,7 +317,7 @@ main .area-wrapper #area .box:active {
   margin-right: 6px;
   width: 49px;
   height: 32px;
-  background-image: url(./img/Royal_Standard_of_England2.png);
+  background-image: url(./img/England2.png);
   border-radius: 5%;
 }
 .switchers .lang-menu ul li .ru:before {
@@ -327,7 +327,7 @@ main .area-wrapper #area .box:active {
   background-image: url(./img/Flag_of_China2.png);
 }
 .switchers .lang-menu ul li .en:before {
-  background-image: url(./img/Royal_Standard_of_England2.png);
+  background-image: url(./img/England2.png);
 }
 .switchers .lang-menu ul li .ch {
   font-family: "Noto Sans SC", black;
