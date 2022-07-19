@@ -169,6 +169,19 @@ main{
 	height: 5rem;
 	max-width: 750px;
 
+	a{
+		color: black;
+		text-decoration: none;
+	}
+
+	.autor{
+		padding: 5px;
+		align-self: flex-end;
+	}
+	h4:hover{
+		font-size: 16px;
+	}
+
 	.lang-menu{
 
 		.selected-lang{
@@ -267,8 +280,7 @@ main{
 			width: 160px;
 			cursor: pointer;
 			padding: 15px;
-
-
+		}
 		.sound-img:before{
 			content: '';
 			display: block;
@@ -277,10 +289,9 @@ main{
 			background-image: url(./img/sound-on.png);
 			border-radius: 5%;
 		}
-
+		.sound-img:active{
+			background-image: url(./img/sound-off.png);
 	}
-	
-	
 	
 }
 

@@ -261,6 +261,17 @@ main .area-wrapper #area .box:active {
   height: 5rem;
   max-width: 750px;
 }
+.switchers a {
+  color: black;
+  text-decoration: none;
+}
+.switchers .autor {
+  padding: 5px;
+  align-self: flex-end;
+}
+.switchers h4:hover {
+  font-size: 16px;
+}
 .switchers .lang-menu .selected-lang {
   display: flex;
   align-items: center;
@@ -341,11 +352,14 @@ main .area-wrapper #area .box:active {
   cursor: pointer;
   padding: 15px;
 }
-.switchers .sound .sound-img:before {
+.switchers .sound-img:before {
   content: "";
   display: block;
   width: 49px;
   height: 32px;
   background-image: url(./img/sound-on.png);
   border-radius: 5%;
+}
+.switchers .sound-img:active {
+  background-image: url(./img/sound-off.png);
 }/*# sourceMappingURL=style.css.map */
