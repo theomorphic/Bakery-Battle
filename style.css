@@ -261,9 +261,6 @@ main .area-wrapper #area .box:active {
   height: 5rem;
   max-width: 750px;
 }
-.switchers .lang-menu {
-  position: relative;
-}
 .switchers .lang-menu .selected-lang {
   display: flex;
   align-items: center;
@@ -282,9 +279,9 @@ main .area-wrapper #area .box:active {
 }
 .switchers .lang-menu ul {
   flex-direction: column;
-  position: absolute;
-  bottom: -25px;
-  left: 105px;
+  position: fixed;
+  bottom: -5px;
+  left: 690px;
   margin: 0;
   padding: 0px;
   border: 2px solid black;

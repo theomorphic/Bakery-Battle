@@ -170,7 +170,7 @@ main{
 	max-width: 750px;
 
 	.lang-menu{
-		position: relative;
+		// position: relative;
 
 		.selected-lang{
 			display: flex;
@@ -193,9 +193,10 @@ main{
 
 		ul{
 			flex-direction: column;
-			position: absolute;
-			bottom: -25px;
-			left: 105px;
+			// position: absolute;
+			position: fixed;
+			bottom: -5px;
+			left: 690px;
 			margin: 0;
 			padding: 0px;
 			border: 2px solid black;
