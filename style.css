@@ -266,11 +266,14 @@ main .area-wrapper #area .box:active {
   text-decoration: none;
 }
 .switchers .autor {
-  padding: 5px;
+  display: flex;
+  padding: 10px;
   align-self: flex-end;
+  font-size: 1.17em;
 }
-.switchers h4:hover {
-  font-size: 16px;
+.switchers .autor:hover {
+  font-size: 1.27em;
+  transition: all 0.4s ease;
 }
 .switchers .lang-menu .selected-lang {
   display: flex;

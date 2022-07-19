@@ -175,11 +175,15 @@ main{
 	}
 
 	.autor{
-		padding: 5px;
+		display: flex;
+		padding: 10px;
 		align-self: flex-end;
+		font-size: 1.17em;
 	}
-	h4:hover{
-		font-size: 16px;
+	.autor:hover{
+		font-size: 1.27em;
+		transition: all 0.4s ease;
+
 	}
 
 	.lang-menu{
@@ -270,7 +274,7 @@ main{
 	}
 
 	.lang-menu:hover ul{
-		display: block;
+		display: block;		
 	}
 
 	.sound{
