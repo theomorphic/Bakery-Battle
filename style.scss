@@ -1,9 +1,8 @@
 @import "./scss/window";
 @import "./scss/buttons.scss";
-// @import "./scss/footer.scss";
 
 @import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@900&display=swap');
 *{
 	margin: 0;
 	padding: 0;
@@ -37,6 +36,8 @@ footer{
 		margin: 0 auto;
 		display: flex;
 		justify-content: center;
+		align-items: center;
+
 	}
 
 		h1{
@@ -159,4 +160,128 @@ main{
 	margin-top: 70px;
 }
 
-    
+.switchers{
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	height: 5rem;
+	max-width: 750px;
+
+	.lang-menu{
+		position: relative;
+
+		.selected-lang{
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			width: 205px;
+			cursor: pointer;
+			padding: 15px;
+	
+		}
+	
+		.selected-lang:before{
+			content: '';
+			display: block;
+			width: 49px;
+			height: 32px;
+			background-image: url(/img/Royal_Standard_of_England2.png);
+			border-radius: 5%;
+		}
+
+		ul{
+			flex-direction: column;
+			position: absolute;
+			bottom: -25px;
+			left: 105px;
+			margin: 0;
+			padding: 0px;
+			border: 2px solid black;
+			border-radius: 5%;
+			box-shadow: 0px 1px 5px rgba($color: #000000, $alpha: 1.0);
+			display: none;
+
+	
+			li{
+				text-decoration: none;
+				list-style: none;
+				display: flex;
+				justify-content: space-between;
+				cursor: pointer;
+	
+				a{
+					width: 140px;
+					display: block;
+					padding: 10px 10px;
+					width: 100%;
+					font-size: 1.17em;
+				}
+	
+				a:hover{
+					background-color: #E0B179;
+					transition: all 0.4s ease;
+	
+				}
+	
+				a:before{
+					content: '';
+				display: inline-block;
+				vertical-align: middle;
+				margin-right: 6px;
+				width: 49px;
+				height: 32px;
+				background-image: url(./img/Royal_Standard_of_England2.png);
+				border-radius: 5%;
+				}
+	
+				.ru:before{
+					background-image: url(./img/Flag_of_the_Russian_Empire2.png);
+				}
+	
+				.ch:before{
+					background-image: url(./img/Flag_of_China2.png);
+				}
+	
+				.en:before{
+					background-image: url(./img/Royal_Standard_of_England2.png);
+				}
+
+				.ch{
+					font-family: 'Noto Sans SC', black;
+					font-size: 20px;
+				}
+			}
+		}
+	
+	}
+
+	.lang-menu:hover ul{
+		display: block;
+	}
+
+	.sound{
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			width: 160px;
+			cursor: pointer;
+			padding: 15px;
+
+
+		.sound-img:before{
+			content: '';
+			display: block;
+			width: 49px;
+			height: 32px;
+			background-image: url(./img/sound-on.png);
+			border-radius: 5%;
+		}
+
+	}
+	
+	
+	
+}
+

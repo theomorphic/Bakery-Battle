@@ -1,4 +1,5 @@
 @import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@900&display=swap");
 #modal-result-wrapper {
   width: 100%;
   height: 100%;
@@ -145,6 +146,7 @@ footer nav {
   margin: 0 auto;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 header h1,
 footer h1 {
@@ -248,4 +250,105 @@ main .area-wrapper #area .box:active {
   max-width: 600px;
   margin-left: 375px;
   margin-top: 70px;
+}
+
+.switchers {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  max-width: 750px;
+}
+.switchers .lang-menu {
+  position: relative;
+}
+.switchers .lang-menu .selected-lang {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 205px;
+  cursor: pointer;
+  padding: 15px;
+}
+.switchers .lang-menu .selected-lang:before {
+  content: "";
+  display: block;
+  width: 49px;
+  height: 32px;
+  background-image: url(/img/Royal_Standard_of_England2.png);
+  border-radius: 5%;
+}
+.switchers .lang-menu ul {
+  flex-direction: column;
+  position: absolute;
+  bottom: -25px;
+  left: 105px;
+  margin: 0;
+  padding: 0px;
+  border: 2px solid black;
+  border-radius: 5%;
+  box-shadow: 0px 1px 5px black;
+  display: none;
+}
+.switchers .lang-menu ul li {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.switchers .lang-menu ul li a {
+  width: 140px;
+  display: block;
+  padding: 10px 10px;
+  width: 100%;
+  font-size: 1.17em;
+}
+.switchers .lang-menu ul li a:hover {
+  background-color: #E0B179;
+  transition: all 0.4s ease;
+}
+.switchers .lang-menu ul li a:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 6px;
+  width: 49px;
+  height: 32px;
+  background-image: url(./img/Royal_Standard_of_England2.png);
+  border-radius: 5%;
+}
+.switchers .lang-menu ul li .ru:before {
+  background-image: url(./img/Flag_of_the_Russian_Empire2.png);
+}
+.switchers .lang-menu ul li .ch:before {
+  background-image: url(./img/Flag_of_China2.png);
+}
+.switchers .lang-menu ul li .en:before {
+  background-image: url(./img/Royal_Standard_of_England2.png);
+}
+.switchers .lang-menu ul li .ch {
+  font-family: "Noto Sans SC", black;
+  font-size: 20px;
+}
+.switchers .lang-menu:hover ul {
+  display: block;
+}
+.switchers .sound {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 160px;
+  cursor: pointer;
+  padding: 15px;
+}
+.switchers .sound .sound-img:before {
+  content: "";
+  display: block;
+  width: 49px;
+  height: 32px;
+  background-image: url(./img/sound-on.png);
+  border-radius: 5%;
 }/*# sourceMappingURL=style.css.map */
