@@ -50,7 +50,7 @@ btn_change2.addEventListener('click', e=>{
 	document.getElementById("enemyName").innerHTML = "Multiplayer";
 	document.getElementById("enemyDesc").innerHTML = `Challenge your friend or foe in <br>a relentless gingerbread battle!`;
 	document.getElementById("enemyImg").style.backgroundImage = "url('img/Multiplayer.png')";
-	
+
 	reload();
 });
 btn_change3.addEventListener('click', e=>{
@@ -91,39 +91,54 @@ function mark_reverse(mark)
 	return X_MARK;
 }
 
-function get_cell_score(boxes, cell, mrk, winmrk)
+function one_step_win()
 {
-	let score = 0;
-	let next_boxes = boxes.slice();
-	next_boxes[cell] = mrk;
-	let next_mrk = mark_reverse(mrk);
-	switch (check_win(next_boxes)) {
-		case winmrk: return 1;
-		case mark_reverse(winmrk): return -1;
-		case 1: return 0;
+	let boxes, result;
+	for (i = 0; i < 9; i++) {
+		boxes = get_boxes();
+		if (boxes[i] == O_MARK || boxes[i] == X_MARK)
+			continue;
+		boxes[i] = O_MARK;
+		result = check_win(boxes);
+		if (result)
+			return i;
 	}
-	let next_empty = get_empty(next_boxes);
-	let i = 0;
-	for (i in next_empty) {
-		score += get_cell_score(next_boxes, next_empty[i], next_mrk, winmrk);
+	for (i = 0; i < 9; i++) {
+		boxes = get_boxes();
+		if (boxes[i] == O_MARK || boxes[i] == X_MARK)
+			continue;
+		boxes[i] = X_MARK;
+		result = check_win(boxes);
+		if (result)
+			return i;
 	}
-	return score;
+	return -1;
+}
+
+function is_empty(cell)
+{
+	let boxes = get_boxes();
+	if (boxes[cell] == O_MARK || boxes[cell] == X_MARK)
+		return 0;
+	return 1;
 }
 
 function ai()
 {
-	let choice;
-	let boxes = get_boxes();
-	let empty = get_empty(boxes);
+	let choice, result, boxes, empty;
+	boxes = get_boxes();
+	empty = get_empty(boxes);
+	const best_choices = [4, 0, 2, 6, 8, 1, 3, 5, 7];
 	if (mode == MODE_AI) {
-		let highest = -100000;
-		let sc;
-		let k = 0;
-		for (k in empty) {
-			sc = get_cell_score(boxes, empty[k], mark, O_MARK);
-			if (sc > highest) {
-				choice = empty[k];
-				highest = sc;
+		result = one_step_win();
+		if (result != -1) {
+			choice = result;
+		} else {
+			for (i = 0; i < 5; i++) {
+				if (is_empty(best_choices[i])) {
+					choice = best_choices[i];
+					break;
+				}
 			}
 		}
 	} else if (mode == MODE_NINNY) {
