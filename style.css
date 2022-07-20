@@ -260,6 +260,8 @@ main .area-wrapper #area .box:active {
   align-items: center;
   height: 5rem;
   max-width: 750px;
+  background-color: #f1f3f4;
+  border-radius: 5%;
 }
 .switchers a {
   color: black;
@@ -271,9 +273,15 @@ main .area-wrapper #area .box:active {
   align-self: flex-end;
   font-size: 1.17em;
 }
+.switchers .autor b {
+  text-align: center;
+}
 .switchers .autor:hover {
   font-size: 1.27em;
   transition: all 0.4s ease;
+}
+.switchers .lang-menu {
+  position: relative;
 }
 .switchers .lang-menu .selected-lang {
   display: flex;
@@ -281,7 +289,7 @@ main .area-wrapper #area .box:active {
   justify-content: space-between;
   width: 205px;
   cursor: pointer;
-  padding: 15px;
+  padding: 10px;
 }
 .switchers .lang-menu .selected-lang:before {
   content: "";
@@ -293,9 +301,9 @@ main .area-wrapper #area .box:active {
 }
 .switchers .lang-menu ul {
   flex-direction: column;
-  position: fixed;
-  bottom: -5px;
-  left: 690px;
+  position: absolute;
+  bottom: -30px;
+  left: 99px;
   margin: 0;
   padding: 0px;
   border: 2px solid black;
@@ -316,6 +324,7 @@ main .area-wrapper #area .box:active {
   padding: 10px 10px;
   width: 100%;
   font-size: 1.17em;
+  background-color: #f1f3f4;
 }
 .switchers .lang-menu ul li a:hover {
   background-color: #E0B179;
@@ -346,22 +355,4 @@ main .area-wrapper #area .box:active {
 }
 .switchers .lang-menu:hover ul {
   display: block;
-}
-.switchers .sound {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 170px;
-  cursor: pointer;
-  padding: 15px;
-  font-size: 40px;
-}
-.switchers .sound:hover {
-  font-size: 45px;
-  transition: all 0.4s ease;
-}
-
-audio {
-  display: block;
-  border-radius: 5%;
 }/*# sourceMappingURL=style.css.map */
