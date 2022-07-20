@@ -351,18 +351,17 @@ main .area-wrapper #area .box:active {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 160px;
+  width: 170px;
   cursor: pointer;
   padding: 15px;
+  font-size: 40px;
 }
-.switchers .sound-img:before {
-  content: "";
+.switchers .sound:hover {
+  font-size: 45px;
+  transition: all 0.4s ease;
+}
+
+audio {
   display: block;
-  width: 49px;
-  height: 32px;
-  background-image: url(./img/sound-on.png);
   border-radius: 5%;
-}
-.switchers .sound-img:active {
-  background-image: url(./img/sound-off.png);
 }/*# sourceMappingURL=style.css.map */
