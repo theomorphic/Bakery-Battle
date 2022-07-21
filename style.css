@@ -160,7 +160,7 @@ header {
 
 footer {
   bottom: 0;
-  height: 100px;
+  height: 120px;
 }
 
 main {
@@ -255,22 +255,20 @@ main .area-wrapper #area .box:active {
 .switchers {
   margin: 0 auto;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   height: 5rem;
   max-width: 750px;
-  background-color: #f1f3f4;
-  border-radius: 5%;
 }
 .switchers a {
   color: black;
   text-decoration: none;
 }
 .switchers .autor {
+  margin-top: 10px;
   display: flex;
   padding: 10px;
-  align-self: flex-end;
   font-size: 1.17em;
 }
 .switchers .autor b {
@@ -324,7 +322,6 @@ main .area-wrapper #area .box:active {
   padding: 10px 10px;
   width: 100%;
   font-size: 1.17em;
-  background-color: #f1f3f4;
 }
 .switchers .lang-menu ul li a:hover {
   background-color: #E0B179;
