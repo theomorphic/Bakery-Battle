@@ -7,8 +7,8 @@ const MODE_2P = '2 Players';
 const MODE_AI = 'AI';
 const MODE_NINNY = 'Ninny';
 
-const X_MARK = "X";
-const O_MARK = "O";
+const X_MARK = '<img src="../img/Cookie.png">';
+const O_MARK = '<img src="../img/Muffin.png">';
 
 let mark = X_MARK;
 let mode = MODE_AI;
@@ -183,12 +183,12 @@ function check()
 	mark = mark_reverse(mark);
 	switch (check_win(get_boxes())) {
 	case X_MARK:
-		result = 'Cookies';
+		result = 'Biscuits';
 		prepareResult(result);
 		return 0;
 		break;
 	case O_MARK:
-		result = 'Biscuits';
+		result = 'Cookies';
 		prepareResult(result);
 		return 0;
 	case 1:
