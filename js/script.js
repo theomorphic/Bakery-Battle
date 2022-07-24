@@ -7,8 +7,8 @@ const MODE_2P = '2 Players';
 const MODE_AI = 'AI';
 const MODE_NINNY = 'Ninny';
 
-const X_MARK = '<img src="/js/Cookie.png">';
-const O_MARK = '<img src="/js/Muffin.png">';
+const X_MARK = '<img src="./js/Cookie.png">';
+const O_MARK = '<img src="./js/Muffin.png">';
 
 let mark = X_MARK;
 let mode = MODE_AI;
