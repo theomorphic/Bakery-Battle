@@ -7,8 +7,8 @@ const MODE_2P = '2 Players';
 const MODE_AI = 'AI';
 const MODE_NINNY = 'Ninny';
 
-const X_MARK = '<img src="./js/Cookie.png">';
-const O_MARK = '<img src="./js/Muffin.png">';
+const X_MARK = '<img src="./img/Cookie_mark.png">';
+const O_MARK = '<img src="./img/Muffin_mark.png">';
 
 let mark = X_MARK;
 let mode = MODE_AI;
@@ -64,7 +64,7 @@ btn_change3.addEventListener('click', e=>{
 });
 
 area.addEventListener('click', e=>{
-	if (e.target.className = 'box') {
+	if (e.target.className == 'box') {
 		if (e.target.innerHTML == "") {
 			e.target.innerHTML = mark;
 			if (check())
