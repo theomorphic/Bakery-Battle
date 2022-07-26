@@ -3,6 +3,12 @@ const btn_change1 = document.getElementById('btn-change1');
 const btn_change2 = document.getElementById('btn-change2');
 const btn_change3 = document.getElementById('btn-change3');
 
+
+const lang_switch_eng = document.getElementById('lang-switch-eng');
+const lang_switch_ch = document.getElementById('lang-switch-ch');
+const lang_switch_ru = document.getElementById('lang-switch-ru');
+
+
 const MODE_2P = '2 Players';
 const MODE_AI = 'AI';
 const MODE_NINNY = 'Ninny';
@@ -36,13 +42,13 @@ function reload()
 		document.getElementById('box' + i).innerHTML = '';
 }
 
+
 btn_change1.addEventListener('click', e=>{
 	mode = MODE_AI;
 	document.getElementById("enemyName").innerHTML = "Da Muffin";
 	document.getElementById("enemyDesc").innerHTML = `The roughest Muffin in da<br>
 	world is comming for ya!`;
 	document.getElementById("enemyImg").style.backgroundImage = "url('img/Muffin-Boss.png')";
-
 	reload();
 });
 btn_change2.addEventListener('click', e=>{
