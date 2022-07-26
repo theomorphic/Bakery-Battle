@@ -8,4 +8,4 @@
 
 Choose your destiny and a field cell. And don't forget **to star the game!**
 
-Let's see you have a try: https://theomorphic.github.io/Bakery-Battle/
+Let's see you have a try: https://theomorphic.github.io/Bakery-Battle
