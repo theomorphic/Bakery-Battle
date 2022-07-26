@@ -109,12 +109,12 @@ header {
 
 footer {
   bottom: 0;
-  height: 150px;
+  height: 135px;
 }
 
 main {
   flex-grow: 1;
-  padding: 3rem;
+  padding: 2rem;
 }
 main .main-header {
   max-width: 750px;
@@ -227,6 +227,7 @@ main .area-wrapper #area .box:active {
   background-color: blanchedalmond;
   padding: 8px;
   border-radius: 5%;
+  border-color: #000000;
   box-shadow: 0px 1px 5px black;
 }
 
