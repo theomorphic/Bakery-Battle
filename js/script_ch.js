@@ -53,7 +53,7 @@ btn_change1.addEventListener('click', e=>{
 btn_change2.addEventListener('click', e=>{
 	mode = MODE_2P;
 	document.getElementById("enemyName").innerHTML = "多人游戏";
-	document.getElementById("enemyDesc").innerHTML = "挑战你朋友或者敌人<br>在残忍姜饼战斗你要吃苦";
+	document.getElementById("enemyDesc").innerHTML = "在残忍姜饼的战斗上<br>挑战你的朋友或者敌人";
 	document.getElementById("enemyImg").style.backgroundImage = "url('img/Multiplayer.png')";
 
 	reload();
@@ -193,7 +193,7 @@ function check()
 		return 0;
 		break;
 	case O_MARK:
-		result = '曲奇饼';
+		result = '蛋糕';
 		prepareResult(result);
 		return 0;
 	case 1:
@@ -203,7 +203,7 @@ function check()
 	return 1;
 }
 const prepareResult = winner => {
-	let message = `${winner} 烧焦了`;
+	let message = `${winner}煎熟好了`;
 	if (winner == 0)
 		message = '平局';
 	contentWrapper.innerHTML = message;
