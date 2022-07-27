@@ -10,7 +10,7 @@ ul {
 ul li {
   list-style: none;
   width: 200px;
-  border-radius: 20%;
+  border-radius: 10%;
 }
 ul li a {
   display: block;
@@ -34,7 +34,7 @@ ul li a {
   z-index: -1;
   transition: 0.5s;
   opacity: 0;
-  border-radius: 20%;
+  border-radius: 10%;
 }
 
 ul li.active a {
@@ -109,7 +109,23 @@ header {
 
 footer {
   bottom: 0;
-  height: 135px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .autor {
+  display: flex;
+  padding: 20px;
+  font-size: 1.2em;
+  color: black;
+  text-decoration: none;
+}
+footer .autor b {
+  text-align: center;
+}
+footer .autor:hover {
+  font-size: 1.3em;
+  transition: all 0.4s ease;
 }
 
 main {
@@ -198,66 +214,7 @@ main .area-wrapper #area .box:active {
   align-items: center;
   max-width: 600px;
   margin-left: 375px;
-  margin-top: 70px;
-}
-
-.switchers {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  height: 5rem;
-  max-width: 750px;
-  color: black;
-  text-decoration: none;
-}
-.switchers .lang-menu {
-  position: relative;
-  flex-direction: row;
-  font-size: 16px;
-  font-style: oblique;
-  height: 100px;
-  padding: 20px;
-}
-
-#lang-switch-eng,
-#lang-switch-ch,
-#lang-switch-ru {
-  background-color: blanchedalmond;
-  padding: 8px;
-  border-radius: 5%;
-  border-color: #000000;
-  box-shadow: 0px 1px 5px black;
-}
-
-#lang-switch-eng:hover,
-#lang-switch-ch:hover,
-#lang-switch-ru:hover {
-  background-color: #E0B179;
-  font-size: 18px;
-}
-
-#lang-switch-eng:active,
-#lang-switch-ch:active,
-#lang-switch-ru:active {
-  background-color: #765C3D;
-}
-
-.autor {
-  display: flex;
-  padding: 10px;
-  font-size: 1.17em;
-  color: black;
-  text-decoration: none;
-}
-.autor b {
-  text-align: center;
-}
-
-.autor:hover {
-  font-size: 1.27em;
-  transition: all 0.4s ease;
+  margin-top: 105px;
 }
 
 #modal-result-wrapper {
