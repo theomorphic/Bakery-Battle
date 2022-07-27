@@ -6,7 +6,7 @@
     <meta name="google" content="notranslate">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сдобная Схватка</title>
-    <link rel="stylesheet" href="style_front.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
@@ -23,32 +23,45 @@
     <main>
         <div class="main-header">
             <div class="enemies">
-                <span class="enemy_muf" id="enemyImg"></span>
-                <span class="enemy_mul" id="enemyImg2"></span>
-                <span class="enemy_mil" id="enemyImg3"></span>
-                </div>
-
-                <div class="welcome_text">
-                    <h2>Приветствую, о Могучий Пекарь!</h2>
-                    <h3>Правила очень просты:</h3>
-                    <h4>Подгорят либо враги, либо у тебя.</h4>
-                    <h4>Это как крестики-нолики, только пышнее!</h4>
-                </div>
-                <div class="the_start_button">
-                    <a href="/index_ru.html" class="start_btn"><b>Кроши врагов, а не батон</b></a>
-                </div>
-                
-                <div class="notice">
-                    <h4>Маффины - не кексы, нет им доверия!</h4>
+                <span class="enemy" id="enemyImg"></span>
+                <div class="enemy-text">
+                    <h2 id="enemyName">Грубый Маффин</h2>
+                        <p id="enemyDesc">Огрубевший и злой Маффин<br>
+                            сейчас сам съест тебя!</p>
                 </div>
             </div>
+            
+            <div class="area-wrapper">
+                <div id="area">
+                    <!-- #box*9 -->
+                    <div class="box" id="box0"></div>
+                    <div class="box" id="box1"></div>
+                    <div class="box" id="box2"></div>
+                    <div class="box" id="box3"></div>
+                    <div class="box" id="box4"></div>
+                    <div class="box" id="box5"></div>
+                    <div class="box" id="box6"></div>
+                    <div class="box" id="box7"></div>
+                    <div class="box" id="box8"></div>
+                </div>
+            </div>
+    
+            <div class="thebuttons">
+                <ul>
+                    <li class="active" class="btn-change" id="btn-change1"><a href="#AI">Маффин</a></li>
+                    <li class="btn-change" id="btn-change2"><a href="#Multiplay">Мульти</a></li>
+                    <li class="btn-change" id="btn-change3"><a href="#Easy">Печенюшка</a></li>
+                    <li class="slide"></li>
+                </ul>
+            </div>
+        </div> 
     </main>
     
     <div id="modal-result-wrapper">
         <div id="overlay">
             <div id="modal-window">
                 <div id="content">content</div>
-                <div id="btn-close">Keep bakering!</div>
+                <div id="btn-close">Не сбавляй жару!</div>
             </div>
         </div>
     </div>
@@ -56,8 +69,8 @@
          <footer>
             <div class="lang-buttons">
                 <a class="eng-btn" href="./index.html"><b>English</b></a>
-                <a class="ch-btn" href="./index_ch_front.html"><b>中文</b></a>
-                <a class="ru-btn" href="./index_ru_front.html"><b>Русский</b></a>
+                <a class="ch-btn" href="./ch_front.html"><b>中文</b></a>
+                <a class="ru-btn" href="./ru_front.html"><b>Русский</b></a>
 
             </div>
              <a href="https://github.com/theomorphic" target="_blank" class="autor"><b>theomorphic 2022</b></a>
@@ -73,6 +86,6 @@
             })
         </script>
 
-    <script src="js/script.js"></script>
+    <script src="js/script_ru.js"></script>
 </body>
 </html>
