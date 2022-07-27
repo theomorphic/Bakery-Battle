@@ -45,24 +45,23 @@ function reload()
 
 btn_change1.addEventListener('click', e=>{
 	mode = MODE_AI;
-	document.getElementById("enemyName").innerHTML = "Da Rough Muffin";
-	document.getElementById("enemyDesc").innerHTML = `The roughest Muffin in da<br>
-	world is comming for ya!`;
+	document.getElementById("enemyName").innerHTML = "大马芬";
+	document.getElementById("enemyDesc").innerHTML = "世界上最粗暴的马芬";
 	document.getElementById("enemyImg").style.backgroundImage = "url('img/Muffin-Boss.png')";
 	reload();
 });
 btn_change2.addEventListener('click', e=>{
 	mode = MODE_2P;
-	document.getElementById("enemyName").innerHTML = "Multiplayer";
-	document.getElementById("enemyDesc").innerHTML = `Challenge your friend or foe in <br>a relentless gingerbread battle!`;
+	document.getElementById("enemyName").innerHTML = "多人游戏";
+	document.getElementById("enemyDesc").innerHTML = "挑战你朋友或者敌人<br>在残忍姜饼战斗你要吃苦";
 	document.getElementById("enemyImg").style.backgroundImage = "url('img/Multiplayer.png')";
 
 	reload();
 });
 btn_change3.addEventListener('click', e=>{
 	mode = MODE_NINNY;
-	document.getElementById("enemyName").innerHTML = "Milky";
-	document.getElementById("enemyDesc").innerHTML = `Our rookie-cookie is a newbie <br> but you can't milk it!`;
+	document.getElementById("enemyName").innerHTML = "酥饼干";
+	document.getElementById("enemyDesc").innerHTML = `我们新兵饼干是菜鸟<br>但不是手到擒来`;
 	document.getElementById("enemyImg").style.backgroundImage = "url('img/Milky.png')";
 
 
@@ -189,12 +188,12 @@ function check()
 	mark = mark_reverse(mark);
 	switch (check_win(get_boxes())) {
 	case X_MARK:
-		result = 'Biscuits';
+		result = '饼干';
 		prepareResult(result);
 		return 0;
 		break;
 	case O_MARK:
-		result = 'Cookies';
+		result = '曲奇饼';
 		prepareResult(result);
 		return 0;
 	case 1:
@@ -204,9 +203,9 @@ function check()
 	return 1;
 }
 const prepareResult = winner => {
-	let message = `${winner} are burnt!`;
+	let message = `${winner} 烧焦了`;
 	if (winner == 0)
-		message = 'Dead heat!';
+		message = '平局';
 	contentWrapper.innerHTML = message;
 	modalResult.style.display = 'block';
 }

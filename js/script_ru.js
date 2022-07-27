@@ -45,24 +45,24 @@ function reload()
 
 btn_change1.addEventListener('click', e=>{
 	mode = MODE_AI;
-	document.getElementById("enemyName").innerHTML = "Da Rough Muffin";
-	document.getElementById("enemyDesc").innerHTML = `The roughest Muffin in da<br>
-	world is comming for ya!`;
+	document.getElementById("enemyName").innerHTML = "Грубый Маффин";
+	document.getElementById("enemyDesc").innerHTML = `Огрубевший и злой Маффин<br>
+	сейчас сам съест тебя!`;
 	document.getElementById("enemyImg").style.backgroundImage = "url('img/Muffin-Boss.png')";
 	reload();
 });
 btn_change2.addEventListener('click', e=>{
 	mode = MODE_2P;
-	document.getElementById("enemyName").innerHTML = "Multiplayer";
-	document.getElementById("enemyDesc").innerHTML = `Challenge your friend or foe in <br>a relentless gingerbread battle!`;
+	document.getElementById("enemyName").innerHTML = "Мультиплеер";
+	document.getElementById("enemyDesc").innerHTML = `Кликни недруга иль друга, <br>сойдитесь в битве на хлебном поле`;
 	document.getElementById("enemyImg").style.backgroundImage = "url('img/Multiplayer.png')";
 
 	reload();
 });
 btn_change3.addEventListener('click', e=>{
 	mode = MODE_NINNY;
-	document.getElementById("enemyName").innerHTML = "Milky";
-	document.getElementById("enemyDesc").innerHTML = `Our rookie-cookie is a newbie <br> but you can't milk it!`;
+	document.getElementById("enemyName").innerHTML = "Печенюшка";
+	document.getElementById("enemyDesc").innerHTML = `Молочное печенье съесть легко, <br> оно пока стреляет в молоко`;
 	document.getElementById("enemyImg").style.backgroundImage = "url('img/Milky.png')";
 
 
@@ -189,12 +189,12 @@ function check()
 	mark = mark_reverse(mark);
 	switch (check_win(get_boxes())) {
 	case X_MARK:
-		result = 'Biscuits';
+		result = 'Маффины';
 		prepareResult(result);
 		return 0;
 		break;
 	case O_MARK:
-		result = 'Cookies';
+		result = 'Печеньки';
 		prepareResult(result);
 		return 0;
 	case 1:
@@ -204,9 +204,9 @@ function check()
 	return 1;
 }
 const prepareResult = winner => {
-	let message = `${winner} are burnt!`;
+	let message = `${winner} погорели!`;
 	if (winner == 0)
-		message = 'Dead heat!';
+		message = 'Ничья!';
 	contentWrapper.innerHTML = message;
 	modalResult.style.display = 'block';
 }

@@ -20,7 +20,7 @@ ul li a {
   transition: 0.5s;
   text-decoration: none;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 22px;
   letter-spacing: 1px;
 }
 
@@ -68,8 +68,8 @@ ul li:nth-child(3).active ~ .slide {
 }
 
 html {
-  font-size: 14px;
-  font-family: "Press Start 2P", cursive;
+  font-size: 19px;
+  font-family: "Noto Sans SC", sans-serif;
   background-color: bisque;
 }
 
@@ -99,8 +99,8 @@ footer nav {
 }
 header h1,
 footer h1 {
-  font-size: 40px;
-  letter-spacing: 5px;
+  font-size: 45px;
+  letter-spacing: 15px;
 }
 
 header {
@@ -116,9 +116,10 @@ footer {
 footer .autor {
   display: flex;
   padding: 20px;
-  font-size: 1.2em;
+  font-size: 0.9em;
   color: black;
   text-decoration: none;
+  font-family: "Press Start 2P", cursive;
 }
 footer .autor b {
   text-align: center;
@@ -144,6 +145,8 @@ footer .ru-btn {
   border-color: #000000;
   border: 2px solid black;
   box-shadow: 0px 1px 2px black;
+  font-family: "Press Start 2P", cursive;
+  font-size: 14px;
 }
 footer .ch-btn {
   font-family: "Noto Sans SC", sans-serif;
@@ -162,6 +165,8 @@ footer .ru-btn:active {
 main {
   flex-grow: 1;
   padding: 2rem;
+  line-height: 50px;
+  letter-spacing: 3px;
 }
 main .main-header {
   max-width: 750px;
@@ -193,6 +198,7 @@ main .enemies .enemy-text {
 }
 main .enemies .enemy-text h2 {
   margin-bottom: 10px;
+  font-size: 35px;
 }
 main .enemies .enemy-text p {
   line-height: 25px;
@@ -286,7 +292,7 @@ main .area-wrapper #area .box:active {
   width: 300px;
   height: 70px;
   padding: 1rem;
-  font-size: 20px;
+  font-size: 40px;
   line-height: 25px;
 }
 #modal-result-wrapper #overlay #modal-window #btn-close {
@@ -295,11 +301,15 @@ main .area-wrapper #area .box:active {
   background-color: #A87B45;
   color: black;
   cursor: pointer;
-  font-size: 30px;
+  font-size: 40px;
   border: 3px solid black;
   padding: 1rem;
-  font-size: 20px;
+  font-size: 30px;
   justify-content: center;
   align-items: center;
   text-align: center;
-}/*# sourceMappingURL=style.css.map */
+}
+
+#enemyDesc {
+  font-size: 25px;
+}/*# sourceMappingURL=style_ch.css.map */
