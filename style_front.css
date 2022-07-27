@@ -1,0 +1,352 @@
+@import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@900&display=swap");
+ul {
+  transform: translate(-50%, -50%);
+  display: flex;
+  overflow: hidden;
+  padding: 0;
+  background-color: bisque;
+}
+ul li {
+  list-style: none;
+  width: 200px;
+  border-radius: 10%;
+}
+ul li a {
+  display: block;
+  padding: 5px;
+  text-align: center;
+  color: black;
+  transition: 0.5s;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.slide {
+  position: absolute;
+  width: 200px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #E0B179;
+  z-index: -1;
+  transition: 0.5s;
+  opacity: 0;
+  border-radius: 10%;
+}
+
+ul li.active a {
+  color: #262626;
+}
+
+ul li:nth-child(1).active ~ .slide {
+  left: 0;
+  opacity: 1;
+}
+
+ul li:nth-child(2).active ~ .slide {
+  left: 200px;
+  opacity: 1;
+}
+
+ul li:nth-child(3).active ~ .slide {
+  left: 400px;
+  opacity: 1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  touch-action: none;
+}
+
+html {
+  font-size: 14px;
+  font-family: "Press Start 2P", cursive;
+  background-color: bisque;
+}
+
+body {
+  min-width: 800px;
+  width: 100%;
+  margin: auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+header,
+footer {
+  width: inherit;
+  min-width: inherit;
+  padding: 1rem;
+  background-color: #E0B179;
+}
+header nav,
+footer nav {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header h1,
+footer h1 {
+  font-size: 40px;
+  letter-spacing: 5px;
+}
+
+header {
+  top: 0;
+}
+
+footer {
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .autor {
+  display: flex;
+  padding: 20px;
+  font-size: 1.2em;
+  color: black;
+  text-decoration: none;
+}
+footer .autor b {
+  text-align: center;
+}
+footer .autor:hover {
+  font-size: 1.3em;
+  transition: all 0.4s ease;
+}
+footer .lang-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 330px;
+}
+footer .eng-btn,
+footer .ch-btn,
+footer .ru-btn {
+  color: #000000;
+  text-decoration: none;
+  padding: 10px;
+  background-color: #ffe4c4;
+  border-radius: 10%;
+  border-color: #000000;
+  border: 2px solid black;
+  box-shadow: 0px 1px 2px black;
+}
+footer .ch-btn {
+  font-family: "Noto Sans SC", sans-serif;
+}
+footer .eng-btn:hover,
+footer .ch-btn:hover,
+footer .ru-btn:hover {
+  background-color: #E0B179;
+}
+footer .eng-btn:active,
+footer .ch-btn:active,
+footer .ru-btn:active {
+  background-color: #A87B45;
+}
+
+main {
+  flex-grow: 1;
+  padding: 2rem;
+}
+main .main-header {
+  max-width: 750px;
+  margin: auto;
+  justify-content: center;
+}
+main .main-header .notice {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+main .welcome_text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+  border: #000000 2px solid;
+  border-radius: 2%;
+  box-shadow: 0px 1px 3px black;
+  line-height: 40px;
+}
+main .the_start_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .the_start_button .start_btn {
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 50px;
+  background-color: #E0B179;
+  border: #000000 2px solid;
+  border-radius: 2%;
+  box-shadow: 0px 1px 3px black;
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+main .the_start_button .start_btn:hover {
+  font-size: 20px;
+  transition: all 0.4s ease;
+}
+main .the_start_button .start_btn:active {
+  background-color: #765C3D;
+}
+main .enemies {
+  display: flex;
+  margin-bottom: 6%;
+  align-items: center;
+  justify-content: space-around;
+}
+main .enemies .enemy_muf {
+  background-image: url(img/Muffin-Boss.png);
+  background-repeat: no-repeat;
+  width: 160px;
+  height: 160px;
+}
+main .enemies .enemy_muf:hover {
+  background-image: url(img/Muffin-Boss-Angry.png);
+  transition: all 0.3s ease;
+}
+main .enemies .enemy_mul {
+  background-image: url(img/Multiplayer.png);
+  background-repeat: no-repeat;
+  width: 160px;
+  height: 160px;
+}
+main .enemies .enemy_mul:hover {
+  background-image: url(img/Multiplayer-Sparkle.png);
+  transition: all 0.3s ease;
+}
+main .enemies .enemy_mil {
+  background-image: url(img/Milky.png);
+  background-repeat: no-repeat;
+  width: 160px;
+  height: 160px;
+}
+main .enemies .enemy_mil:hover {
+  background-image: url(img/Milky-Shy.png);
+  transition: all 0.3s ease;
+}
+main .area-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 6%;
+}
+main .area-wrapper #area {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+}
+main .area-wrapper #area .box {
+  width: 100px;
+  height: 100px;
+  background-color: blanchedalmond;
+  border: 2px solid black;
+  box-sizing: border-box;
+  font-size: 34px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  border-radius: 5%;
+  border-color: #42231e;
+  border-width: 3px;
+  box-shadow: 0px 1px 5px black;
+}
+main .area-wrapper #area .box:hover {
+  background-color: #E0B179;
+}
+main .area-wrapper #area .box:active {
+  background-color: #765C3D;
+}
+
+.thebuttons {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  margin-left: 375px;
+  margin-top: 105px;
+}
+
+#modal-result-wrapper {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+}
+#modal-result-wrapper #overlay {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+#modal-result-wrapper #overlay #modal-window {
+  width: 300px;
+  height: 80px;
+  border: 3px solid black;
+  background-color: bisque;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 30px;
+  box-shadow: 0px 1px 5px black;
+}
+#modal-result-wrapper #overlay #modal-window #content {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 300px;
+  height: 70px;
+  padding: 1rem;
+  font-size: 20px;
+  line-height: 25px;
+}
+#modal-result-wrapper #overlay #modal-window #btn-close {
+  width: 300px;
+  height: 80px;
+  background-color: #A87B45;
+  color: black;
+  cursor: pointer;
+  font-size: 30px;
+  border: 3px solid black;
+  padding: 1rem;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}/*# sourceMappingURL=style_front.css.map */
