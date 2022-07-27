@@ -1,5 +1,5 @@
 # Bakery Battle
-Сrisp and critical Tic-Tac-Toe in the bakery setting. A simple JS Web Game with AI and jQuery solutin. 
+Сrisp and critical Tic-Tac-Toe in the bakery setting. A simple JS Web Game with AI and jQuery solution. 
 
 ### There's 3 optinal ways to play this game:
 * against **Da Muffin**, wich is a hard level with AI player;
