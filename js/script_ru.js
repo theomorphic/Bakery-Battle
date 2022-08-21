@@ -13,8 +13,8 @@ const MODE_2P = '2 Players';
 const MODE_AI = 'AI';
 const MODE_NINNY = 'Ninny';
 
-const X_MARK = '<img src="./img/Cookie_mark.png">';
-const O_MARK = '<img src="./img/Muffin_mark.png">';
+const X_MARK = '<img src="../img/Cookie_mark.png">';
+const O_MARK = '<img src="../img/Muffin_mark.png">';
 
 let mark = X_MARK;
 let mode = MODE_AI;
@@ -48,14 +48,14 @@ btn_change1.addEventListener('click', e=>{
 	document.getElementById("enemyName").innerHTML = "Грубый Маффин";
 	document.getElementById("enemyDesc").innerHTML = `Огрубевший и злой Маффин<br>
 	сейчас сам съест тебя!`;
-	document.getElementById("enemyImg").style.backgroundImage = "url('img/Muffin-Boss.png')";
+	document.getElementById("enemyImg").style.backgroundImage = "url('../img/Muffin-Boss.png')";
 	reload();
 });
 btn_change2.addEventListener('click', e=>{
 	mode = MODE_2P;
 	document.getElementById("enemyName").innerHTML = "Мультиплеер";
 	document.getElementById("enemyDesc").innerHTML = `Кликни недруга иль друга, <br>сойдитесь в битве на хлебном поле`;
-	document.getElementById("enemyImg").style.backgroundImage = "url('img/Multiplayer.png')";
+	document.getElementById("enemyImg").style.backgroundImage = "url('../img/Multiplayer.png')";
 
 	reload();
 });
@@ -63,7 +63,7 @@ btn_change3.addEventListener('click', e=>{
 	mode = MODE_NINNY;
 	document.getElementById("enemyName").innerHTML = "Печенюшка";
 	document.getElementById("enemyDesc").innerHTML = `Молочное печенье съесть легко, <br> оно пока стреляет в молоко`;
-	document.getElementById("enemyImg").style.backgroundImage = "url('img/Milky.png')";
+	document.getElementById("enemyImg").style.backgroundImage = "url('../img/Milky.png')";
 
 
 	reload();

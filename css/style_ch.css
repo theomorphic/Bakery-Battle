@@ -56,6 +56,10 @@ ul li:nth-child(3).active ~ .slide {
   opacity: 1;
 }
 
+@font-face {
+  font-family: Pufony;
+  src: url(../files/Pufony-1.otf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -116,16 +120,16 @@ footer {
 footer .autor {
   display: flex;
   padding: 20px;
-  font-size: 0.9em;
+  font-size: 1.6em;
   color: black;
   text-decoration: none;
-  font-family: "Press Start 2P", cursive;
+  font-family: Pufony;
 }
 footer .autor b {
   text-align: center;
 }
 footer .autor:hover {
-  font-size: 1.3em;
+  font-size: 1.8em;
   transition: all 0.4s ease;
 }
 footer .lang-buttons {
@@ -173,7 +177,7 @@ main .main-header {
   margin: auto;
   justify-content: center;
   background-color: #ffe4c4;
-  background-image: url(img/BB-Background.png);
+  background-image: url(../img/BB-Background.png);
   background-repeat: no-repeat;
 }
 main .enemies {
@@ -183,13 +187,13 @@ main .enemies {
   justify-content: center;
 }
 main .enemies .enemy {
-  background-image: url(img/Muffin-Boss.png);
+  background-image: url(../img/Muffin-Boss.png);
   background-repeat: no-repeat;
   width: 160px;
   height: 160px;
 }
 main .enemies .enemy:hover {
-  background-image: url(img/Muffin-Boss-Angry.png);
+  background-image: url(../img/Muffin-Boss-Angry.png);
   transition: all 0.3s ease;
 }
 main .enemies .enemy-text {

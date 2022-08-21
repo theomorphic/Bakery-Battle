@@ -2,12 +2,16 @@
 @import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@900&display=swap');
 
+@font-face {
+	font-family: Pufony;
+	src: url(../files/Pufony-1.otf);
+}
+
 *{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	user-select: none;
-	// touch-action: none;
 }
 
 html{
@@ -61,9 +65,10 @@ footer{
 	.autor{
 		display: flex;
 		padding: 20px;
-		font-size: 1.2em;
+		font-size: 1.6em;
 		color: black;
 		text-decoration: none;
+		font-family: Pufony;
 		
 		b{
 			text-align: center;
@@ -71,7 +76,7 @@ footer{
 	}
 	
 	.autor:hover{
-		font-size: 1.3em;
+		font-size: 1.8em;
 		transition: all 0.4s ease;
 	}
 
@@ -122,7 +127,7 @@ main{
 		margin: auto;
 		justify-content: center;
 		background-color: #ffe4c4;
-		background-image: url(img/BB-Background.png);
+		background-image: url(../img/BB-Background.png);
 		background-repeat: no-repeat;
 	}
 
@@ -134,14 +139,14 @@ main{
 		
 
 		.enemy{
-			background-image: url(img/Muffin-Boss.png);
+			background-image: url(../img/Muffin-Boss.png);
 			background-repeat: no-repeat;
 			width: 160px;
 			height: 160px;
 		}
 
 		.enemy:hover{
-			background-image: url(img/Muffin-Boss-Angry.png);
+			background-image: url(../img/Muffin-Boss-Angry.png);
 			transition: all 0.3s ease;
 		}
 

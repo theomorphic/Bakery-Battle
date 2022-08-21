@@ -13,8 +13,8 @@ const MODE_2P = '2 Players';
 const MODE_AI = 'AI';
 const MODE_NINNY = 'Ninny';
 
-const X_MARK = '<img src="./img/Cookie_mark.png">';
-const O_MARK = '<img src="./img/Muffin_mark.png">';
+const X_MARK = '<img src="../img/Cookie_mark.png">';
+const O_MARK = '<img src="../img/Muffin_mark.png">';
 
 let mark = X_MARK;
 let mode = MODE_AI;
@@ -47,14 +47,14 @@ btn_change1.addEventListener('click', e=>{
 	mode = MODE_AI;
 	document.getElementById("enemyName").innerHTML = "大马芬";
 	document.getElementById("enemyDesc").innerHTML = "世界上最粗暴的马芬";
-	document.getElementById("enemyImg").style.backgroundImage = "url('img/Muffin-Boss.png')";
+	document.getElementById("enemyImg").style.backgroundImage = "url('../img/Muffin-Boss.png')";
 	reload();
 });
 btn_change2.addEventListener('click', e=>{
 	mode = MODE_2P;
 	document.getElementById("enemyName").innerHTML = "多人游戏";
 	document.getElementById("enemyDesc").innerHTML = "在残忍姜饼的战斗上<br>挑战你的朋友或者敌人";
-	document.getElementById("enemyImg").style.backgroundImage = "url('img/Multiplayer.png')";
+	document.getElementById("enemyImg").style.backgroundImage = "url('../img/Multiplayer.png')";
 
 	reload();
 });
@@ -62,7 +62,7 @@ btn_change3.addEventListener('click', e=>{
 	mode = MODE_NINNY;
 	document.getElementById("enemyName").innerHTML = "酥饼干";
 	document.getElementById("enemyDesc").innerHTML = `我们新兵饼干是菜鸟<br>但不是手到擒来`;
-	document.getElementById("enemyImg").style.backgroundImage = "url('img/Milky.png')";
+	document.getElementById("enemyImg").style.backgroundImage = "url('../img/Milky.png')";
 
 
 	reload();
