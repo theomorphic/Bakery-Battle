@@ -115,6 +115,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-height: 133.86px;
 }
 footer .autor {
   display: flex;
@@ -136,6 +137,7 @@ footer .lang-buttons {
   flex-direction: row;
   justify-content: space-between;
   width: 330px;
+  padding-top: 10px;
 }
 footer .eng-btn,
 footer .ch-btn,
