@@ -1,0 +1,229 @@
+@import "./scss/buttons.scss";
+@import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@900&display=swap');
+
+@font-face {
+	font-family: Pufony;
+	src: url(../files/Pufony-1.otf);
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	user-select: none;
+}
+
+html{
+	font-size: 14px;
+	font-family: 'Press Start 2P', cursive;
+	background-color: bisque;
+}
+
+body{
+	min-width: 800px;
+	width: 100%;
+	margin: auto;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	overflow-x: hidden;
+}
+
+header,
+footer{
+	width: inherit;
+	min-width: inherit;
+	padding: 1rem;
+	background-color: #E0B179;
+
+
+	nav{
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+	}
+
+		h1{
+			font-size: 40px;
+			letter-spacing: 5px;
+		}
+}
+
+header{
+	top: 0;
+}
+
+footer{
+	bottom: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	.autor{
+		display: flex;
+		padding: 20px;
+		font-size: 1.6em;
+		color: black;
+		text-decoration: none;
+		font-family: Pufony;
+		
+		b{
+			text-align: center;
+		}
+	}
+	
+	.autor:hover{
+		font-size: 1.8em;
+		transition: all 0.4s ease;
+	}
+
+	.lang-buttons{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 330px;
+	}
+	
+	.eng-btn,
+	.ch-btn,
+	.ru-btn{
+		color: #000000;
+		text-decoration: none;
+		padding: 10px;
+		background-color: #ffe4c4;
+		border-radius: 10%;
+		border-color: #000000;
+		border: 2px solid black;
+		box-shadow: 0px 1px 2px rgba($color: #000000, $alpha: 1.0);
+		
+	}
+
+	.ch-btn{
+		font-family: 'Noto Sans SC', sans-serif;
+	}
+
+	.eng-btn:hover,
+	.ch-btn:hover,
+	.ru-btn:hover{
+		background-color: #E0B179;
+	}
+
+	.eng-btn:active,
+	.ch-btn:active,
+	.ru-btn:active{
+		background-color: #A87B45;
+	}
+}
+
+main{
+	flex-grow: 1;
+	padding: 2rem;
+
+	.main-header{
+		max-width: 750px;
+		margin: auto;
+		justify-content: center;
+
+		.notice{
+			display: flex;
+			justify-content: center;
+			margin-top: 50px;
+			font-size: 18px;
+
+		}
+	}
+
+	.welcome_text{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		padding: 20px;
+		border: #000000 2px solid;
+		border-radius: 2%;
+		box-shadow: 0px 1px 3px rgba($color: #000000, $alpha: 1.0);
+		line-height: 40px;
+		font-size: 18px;
+
+	}
+
+	.the_start_button{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		
+		.start_btn{
+			text-align: center;
+			padding: 30px 20px;
+			margin-top: 50px;
+			background-color: #E0B179;
+			border: #000000 2px solid;
+			border-radius: 2%;
+			box-shadow: 0px 1px 3px rgba($color: #000000, $alpha: 1.0);
+			text-decoration: none;
+			color: black;
+			font-size: 18px;
+			text-transform: uppercase;
+			
+		}
+
+		.start_btn:hover{
+			font-size: 20px;
+			transition: all 0.4s ease;
+		}
+
+		.start_btn:active{
+			background-color: #765C3D;
+		}
+
+	}
+	
+
+
+	.enemies{
+		display: flex;
+		margin-bottom: 6%;
+		align-items: center;
+		justify-content: space-around;
+		
+
+		.enemy_muf{
+			background-image: url(../img/Muffin-Boss.png);
+			background-repeat: no-repeat;
+			width: 160px;
+			height: 160px;
+		}
+
+		.enemy_muf:hover{
+			background-image: url(../img/Muffin-Boss-Angry.png);
+			transition: all 0.3s ease;
+		}
+
+		.enemy_mul{
+			background-image: url(../img/Multiplayer.png);
+			background-repeat: no-repeat;
+			width: 160px;
+			height: 160px;
+		}
+
+		.enemy_mul:hover{
+			background-image: url(../img/Multiplayer-Sparkle.png);
+			transition: all 0.3s ease;
+		}
+
+		.enemy_mil{
+			background-image: url(../img/Milky.png);
+			background-repeat: no-repeat;
+			width: 160px;
+			height: 160px;
+		}
+
+		.enemy_mil:hover{
+			background-image: url(../img/Milky-Shy.png);
+			transition: all 0.3s ease;
+		}
+	}
+
+ }
