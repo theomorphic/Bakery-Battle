@@ -189,12 +189,12 @@ function check()
 	mark = mark_reverse(mark);
 	switch (check_win(get_boxes())) {
 	case X_MARK:
-		result = 'Biscuits';
+		result = 'Victory! Biscuits';
 		prepareResult(result);
 		return 0;
 		break;
 	case O_MARK:
-		result = 'Cookies';
+		result = 'Defeat. Cookies';
 		prepareResult(result);
 		return 0;
 	case 1:
@@ -206,7 +206,7 @@ function check()
 const prepareResult = winner => {
 	let message = `${winner} are burnt!`;
 	if (winner == 0)
-		message = 'Dead heat!';
+		message = `Dead heat! It's gone cold.`;
 	contentWrapper.innerHTML = message;
 	modalResult.style.display = 'block';
 }

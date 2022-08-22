@@ -12,11 +12,10 @@
 	padding: 0;
 	box-sizing: border-box;
 	user-select: none;
-	touch-action: none;
 }
 
 html{
-	font-size: 19px;
+	font-size: 14px;
 	font-family: 'Noto Sans SC', sans-serif;
 	background-color: bisque;
 }
@@ -48,8 +47,8 @@ footer{
 	}
 
 		h1{
-			font-size: 45px;
-			letter-spacing: 15px;
+			font-size: 40px;
+			letter-spacing: 5px;
 		}
 }
 
@@ -100,7 +99,6 @@ footer{
 		border: 2px solid black;
 		box-shadow: 0px 1px 2px rgba($color: #000000, $alpha: 1.0);
 		font-family: 'Press Start 2P', cursive;
-		font-size: 14px;
 
 	}
 
@@ -124,8 +122,6 @@ footer{
 main{
 	flex-grow: 1;
 	padding: 2rem;
-	line-height: 50px;
-	letter-spacing: 3px;
 
 	.main-header{
 		max-width: 750px;
@@ -161,7 +157,6 @@ main{
 
 			h2{
 				margin-bottom: 10px;
-				font-size: 35px;
 			}
 			p{
 				line-height: 25px;
@@ -247,7 +242,7 @@ main{
 
 	    #modal-window{
 		width: 300px;
-		height: 80px;
+		height: 180px;
 		border: 3px solid black;
 		background-color: bisque;
 		position: absolute;
@@ -260,6 +255,7 @@ main{
 		align-items: center;
 		font-size: 30px;
 		box-shadow: 0px 1px 5px rgba($color: #000000, $alpha: 1.0);
+		
 
 	    
 
@@ -268,10 +264,9 @@ main{
 				align-items: center;
 				text-align: center;
 				width: 300px;
-				height: 70px;
 				padding: 1rem;
 				font-size: 40px;
-				line-height: 25px;
+				line-height: 40px;
 
 			}
 

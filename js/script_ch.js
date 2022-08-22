@@ -188,12 +188,12 @@ function check()
 	mark = mark_reverse(mark);
 	switch (check_win(get_boxes())) {
 	case X_MARK:
-		result = '饼干';
+		result = '你赢了! 饼干';
 		prepareResult(result);
 		return 0;
 		break;
 	case O_MARK:
-		result = '蛋糕';
+		result = '你输了. 蛋糕';
 		prepareResult(result);
 		return 0;
 	case 1:
