@@ -167,6 +167,7 @@ footer .ru-btn:active {
 main {
   flex-grow: 1;
   padding: 2rem;
+  min-height: 696.69px;
 }
 main .main-header {
   max-width: 750px;
@@ -192,8 +193,10 @@ main .welcome_text {
 }
 main .the_start_button {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  max-height: 200.78px;
 }
 main .the_start_button .start_btn {
   text-align: center;
