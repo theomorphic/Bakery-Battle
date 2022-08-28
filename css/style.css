@@ -90,7 +90,6 @@ header,
 footer {
   width: inherit;
   min-width: inherit;
-  padding: 1rem;
   background-color: #E0B179;
 }
 header nav,
@@ -116,11 +115,12 @@ footer {
   flex-direction: column;
   align-items: center;
   max-height: 133.86px;
+  padding: 20px;
 }
 footer .autor {
   display: flex;
-  padding: 20px;
-  font-size: 1.6em;
+  padding: 20px 0px 0px 0px;
+  font-size: 25px;
   color: black;
   text-decoration: none;
   font-family: Pufony;
@@ -129,7 +129,7 @@ footer .autor b {
   text-align: center;
 }
 footer .autor:hover {
-  font-size: 1.8em;
+  font-size: 28px;
   transition: all 0.4s ease;
 }
 footer .lang-buttons {
@@ -167,7 +167,7 @@ footer .ru-btn:active {
 
 main {
   flex-grow: 1;
-  padding: 2rem;
+  padding: 20px;
   min-height: 696.69px;
 }
 main .main-header {
