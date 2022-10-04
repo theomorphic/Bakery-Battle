@@ -192,40 +192,19 @@ main{
 		justify-content: space-around;
 		
 
-		.enemy_muf{
-			background-image: url(../img/Muffin-Boss.png);
-			background-repeat: no-repeat;
+		.enemy_muf_gif{
 			width: 160px;
 			height: 160px;
 		}
 
-		.enemy_muf:hover{
-			background-image: url(../img/Muffin-Boss-Angry.png);
-			transition: all 0.3s ease;
+		.enemy_mul_gif{
+			width: 200px;
+			height: 200px;
 		}
 
-		.enemy_mul{
-			background-image: url(../img/Multiplayer.png);
-			background-repeat: no-repeat;
+		.enemy_mil_gif{
 			width: 160px;
 			height: 160px;
-		}
-
-		.enemy_mul:hover{
-			background-image: url(../img/Multiplayer-Sparkle.png);
-			transition: all 0.3s ease;
-		}
-
-		.enemy_mil{
-			background-image: url(../img/Milky.png);
-			background-repeat: no-repeat;
-			width: 160px;
-			height: 160px;
-		}
-
-		.enemy_mil:hover{
-			background-image: url(../img/Milky-Shy.png);
-			transition: all 0.3s ease;
 		}
 	}
 

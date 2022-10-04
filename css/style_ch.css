@@ -185,14 +185,11 @@ main .enemies {
   justify-content: center;
 }
 main .enemies .enemy {
-  background-image: url(../img/Muffin-Boss.png);
+  background-image: url(../img/Muffin-Boss-Long.gif);
   background-repeat: no-repeat;
-  width: 160px;
-  height: 160px;
-}
-main .enemies .enemy:hover {
-  background-image: url(../img/Muffin-Boss-Angry.png);
-  transition: all 0.3s ease;
+  background-size: contain;
+  width: 180px;
+  height: 180px;
 }
 main .enemies .enemy-text {
   margin-left: 30px;

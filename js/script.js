@@ -43,19 +43,20 @@ function reload()
 }
 
 
+
 btn_change1.addEventListener('click', e=>{
 	mode = MODE_AI;
 	document.getElementById("enemyName").innerHTML = "Da Rough Muffin";
 	document.getElementById("enemyDesc").innerHTML = `The roughest Muffin in da<br>
 	world is comming for ya!`;
-	document.getElementById("enemyImg").style.backgroundImage = "url('../img/Muffin-Boss.png')";
+	document.getElementById("enemyImg").style.backgroundImage = "url('../img/Muffin-Boss-Long.gif')";
 	reload();
 });
 btn_change2.addEventListener('click', e=>{
 	mode = MODE_2P;
 	document.getElementById("enemyName").innerHTML = "Multiplayer";
 	document.getElementById("enemyDesc").innerHTML = `Challenge your friend or foe in <br>a relentless gingerbread battle!`;
-	document.getElementById("enemyImg").style.backgroundImage = "url('../img/Multiplayer.png')";
+	document.getElementById("enemyImg").style.backgroundImage = "url('../img/Multi-Long.gif')";
 
 	reload();
 });
@@ -63,9 +64,9 @@ btn_change3.addEventListener('click', e=>{
 	mode = MODE_NINNY;
 	document.getElementById("enemyName").innerHTML = "Milky";
 	document.getElementById("enemyDesc").innerHTML = `Our rookie-cookie is a newbie <br> but you can't milk it!`;
-	document.getElementById("enemyImg").style.backgroundImage = "url('../img/Milky.png')";
+	document.getElementById("enemyImg").style.backgroundImage = "url('../img/Milky-Long.gif')";
 
-
+//style.backgroundImage
 	reload();
 });
 
