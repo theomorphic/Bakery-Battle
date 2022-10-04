@@ -230,4 +230,37 @@ main .enemies .enemy_mil_gif {
 main .enemies .enemy_mul_gif {
   width: 200px;
   height: 200px;
+}
+@media (min-width: 441px) and (max-width: 500px) {
+  main .enemies .enemy_muf_gif,
+main .enemies .enemy_mil_gif {
+    width: 140px;
+    height: 140px;
+  }
+  main .enemies .enemy_mul_gif {
+    width: 180px;
+    height: 180px;
+  }
+}
+@media (min-width: 385px) and (max-width: 440px) {
+  main .enemies .enemy_muf_gif,
+main .enemies .enemy_mil_gif {
+    width: 120px;
+    height: 120px;
+  }
+  main .enemies .enemy_mul_gif {
+    width: 160px;
+    height: 160px;
+  }
+}
+@media (min-width: 320px) and (max-width: 384px) {
+  main .enemies .enemy_muf_gif,
+main .enemies .enemy_mil_gif {
+    width: 100px;
+    height: 100px;
+  }
+  main .enemies .enemy_mul_gif {
+    width: 140px;
+    height: 140px;
+  }
 }/*# sourceMappingURL=style_front.css.map */

@@ -203,6 +203,49 @@ main{
 			width: 200px;
 			height: 200px;
 		}
+
+		@media (min-width: 441px) and (max-width: 500px){
+
+			.enemy_muf_gif,
+			.enemy_mil_gif{
+				width: 140px;
+				height: 140px;
+			}
+	
+			.enemy_mul_gif{
+				width: 180px;
+				height: 180px;
+			}
+		}
+
+		@media (min-width: 385px) and (max-width: 440px){
+
+			.enemy_muf_gif,
+			.enemy_mil_gif{
+				width: 120px;
+				height: 120px;
+			}
+	
+			.enemy_mul_gif{
+				width: 160px;
+				height: 160px;
+			}
+	 }
+
+
+	 @media (min-width: 320px) and (max-width: 384px){
+
+		.enemy_muf_gif,
+		.enemy_mil_gif{
+			width: 100px;
+			height: 100px;
+		}
+
+		.enemy_mul_gif{
+			width: 140px;
+			height: 140px;
+		}
+ 	}
 	}
 
 	

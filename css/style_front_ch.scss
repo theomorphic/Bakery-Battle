@@ -15,13 +15,13 @@
 }
 
 html{
-	font-size: 14px;
+	font-size: 1.5vh;
 	font-family: 'Press Start 2P', cursive;
 	background-color: bisque;
 }
 
 body{
-	min-width: 800px;
+	min-width: 41vw;
 	width: 100%;
 	margin: auto;
 	min-height: 100vh;
@@ -46,8 +46,8 @@ footer{
 	}
 
 		h1{
-			font-size: 40px;
-			letter-spacing: 5px;
+			font-size: 4.3vh;
+			letter-spacing: 0.5vh;
 		}
 }
 
@@ -60,14 +60,14 @@ footer{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	max-height: 133.86px;
-	padding: 20px;
+	max-height: 15vh;
+	padding: 2.2vh;
 
 
 	.autor{
 		display: flex;
-		padding: 20px 0px 0px 0px;
-		font-size: 25px;
+		padding: 2.2vh 0vh 0vh 0vh;
+		font-size: 2.7vh;
 		color: black;
 		text-decoration: none;
 		font-family: Pufony;
@@ -78,7 +78,7 @@ footer{
 	}
 	
 	.autor:hover{
-		font-size: 28px;
+		font-size: 3vh;
 		transition: all 0.4s ease;
 	}
 
@@ -86,7 +86,7 @@ footer{
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
-		width: 330px;
+		width: 17vw;
 	}
 	
 	.eng-btn,
@@ -94,7 +94,7 @@ footer{
 	.ru-btn{
 		color: #000000;
 		text-decoration: none;
-		padding: 10px;
+		padding: 1vh;
 		background-color: #ffe4c4;
 		border-radius: 10%;
 		border-color: #000000;
@@ -122,20 +122,20 @@ footer{
 
 main{
 	flex-grow: 1;
-	padding: 20px;
-	min-height: 696.69px;
+	padding: 2.1vh;
+	min-height: 75vh;
 
 
 	.main-header{
-		max-width: 750px;
+		max-width: 39vw;
 		margin: auto;
 		justify-content: center;
 
 		.notice{
 			display: flex;
 			justify-content: center;
-			margin-top: 50px;
-			font-size: 18px;
+			margin-top: 5.3vh;
+			font-size: 2vh
 
 		}
 	}
@@ -144,12 +144,12 @@ main{
 		display: flex;
 		flex-direction: column;
 		text-align: center;
-		padding: 20px;
+		padding: 2.1vh;
 		border: #000000 2px solid;
 		border-radius: 2%;
 		box-shadow: 0px 1px 3px rgba($color: #000000, $alpha: 1.0);
-		line-height: 40px;
-		font-size: 18px;
+		line-height: 4.2vh;
+		font-size: 2vh;
 
 	}
 
@@ -158,25 +158,25 @@ main{
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		max-height: 200.78px;
+		max-height: 22vh;
 		
 		.start_btn{
 			text-align: center;
-			padding: 30px 20px;
-			margin-top: 50px;
+			padding: 3.2vh 2.1vh;
+			margin-top: 5.3vh;
 			background-color: #E0B179;
 			border: #000000 2px solid;
 			border-radius: 2%;
 			box-shadow: 0px 1px 3px rgba($color: #000000, $alpha: 1.0);
 			text-decoration: none;
 			color: black;
-			font-size: 18px;
+			font-size: 2vh;
 			text-transform: uppercase;
 			
 		}
 
 		.start_btn:hover{
-			font-size: 20px;
+			font-size: 2.1vh;
 			transition: all 0.4s ease;
 		}
 
@@ -194,7 +194,8 @@ main{
 		align-items: center;
 		justify-content: space-around;
 		
-		.enemy_muf_gif{
+		.enemy_muf_gif,
+		.enemy_mil_gif{
 			width: 160px;
 			height: 160px;
 		}
@@ -204,10 +205,49 @@ main{
 			height: 200px;
 		}
 
-		.enemy_mil_gif{
-			width: 160px;
-			height: 160px;
+
+		@media (min-width: 441px) and (max-width: 500px){
+
+			.enemy_muf_gif,
+			.enemy_mil_gif{
+				width: 140px;
+				height: 140px;
+			}
+	
+			.enemy_mul_gif{
+				width: 180px;
+				height: 180px;
+			}
 		}
+
+		@media (min-width: 385px) and (max-width: 440px){
+
+			.enemy_muf_gif,
+			.enemy_mil_gif{
+				width: 120px;
+				height: 120px;
+			}
+	
+			.enemy_mul_gif{
+				width: 160px;
+				height: 160px;
+			}
+	 }
+
+
+	 @media (min-width: 320px) and (max-width: 384px){
+
+		.enemy_muf_gif,
+		.enemy_mil_gif{
+			width: 100px;
+			height: 100px;
+		}
+
+		.enemy_mul_gif{
+			width: 140px;
+			height: 140px;
+		}
+ 	}
 		
 	}
 
