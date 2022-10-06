@@ -6,7 +6,7 @@
 * against your friend who you'd like to punch;
 * agaisnt **Milky**, wich is an easy level with AI player;
 
-The game is available in **English, Chinese and Russian**
+The game is available in **English and Russian**
 
 Choose your destiny and a field cell. And don't forget **to star the game!**
 

@@ -25,7 +25,6 @@ body{
 	min-width: 41vw;
 	width: 100%;
 	margin: 0 auto;
-	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
 	overflow-x: hidden;
@@ -65,7 +64,6 @@ footer{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	max-height: 15vh;
 	padding: 2.2vh;
 	justify-content: space-between;
 
@@ -90,9 +88,8 @@ footer{
 	.lang-buttons{
 		display: flex;
 		flex-direction: row;
-		justify-content: space-between;
+		justify-content: center;
 		align-items: center;
-		// width: 17vw;
 	}
 
 	@media (min-width: 1217px) and (max-width: 4000px){
@@ -112,7 +109,8 @@ footer{
 		border-color: #000000;
 		border: 2px solid black;
 		box-shadow: 0px 1px 2px rgba($color: #000000, $alpha: 1.0);
-		
+		margin-left: 0.5vw;
+		margin-right: 0.5vw;
 		
 	}
 
@@ -139,7 +137,7 @@ footer{
 main{
 	flex-grow: 1;
 	padding: 2.1vh;
-	min-height: 75vh;
+	min-height: 76vh;
 
 
 	.main-header{
@@ -176,11 +174,9 @@ main{
 		box-shadow: 0px 1px 3px rgba($color: #000000, $alpha: 1.0);
 		line-height: 4.2vh;
 
+
 	}
 
-	// @media(){
-
-	// }
 
 	@media (min-width: 619px) and (max-width: 640px){
 			

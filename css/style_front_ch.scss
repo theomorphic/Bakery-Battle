@@ -42,6 +42,7 @@ footer{
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		text-align: center;
 
 	}
 
@@ -62,6 +63,7 @@ footer{
 	align-items: center;
 	max-height: 15vh;
 	padding: 2.2vh;
+	justify-content: space-between;
 
 
 	.autor{
@@ -86,9 +88,15 @@ footer{
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
-		width: 17vw;
+		align-items: center;
+		// width: 17vw;
 	}
-	
+
+	@media (min-width: 1217px) and (max-width: 4000px){
+		.lang-buttons{
+		width: 17vw;
+		}
+	}
 	.eng-btn,
 	.ch-btn,
 	.ru-btn{
@@ -134,10 +142,18 @@ main{
 		.notice{
 			display: flex;
 			justify-content: center;
-			margin-top: 5.3vh;
-			font-size: 2vh
+			margin-top: 4.3vh;
 
 		}
+
+		@media (min-width:320px) and (max-width:850px){
+			.notice{
+				
+				margin-top: 2.3vh;
+				margin-bottom: 2vh;
+			}
+		}
+	
 	}
 
 	.welcome_text{
@@ -149,7 +165,6 @@ main{
 		border-radius: 2%;
 		box-shadow: 0px 1px 3px rgba($color: #000000, $alpha: 1.0);
 		line-height: 4.2vh;
-		font-size: 2vh;
 
 	}
 
@@ -159,6 +174,7 @@ main{
 		align-items: center;
 		justify-content: center;
 		max-height: 22vh;
+		line-height: 2.2vh;
 		
 		.start_btn{
 			text-align: center;
