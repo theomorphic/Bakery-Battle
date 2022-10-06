@@ -145,11 +145,6 @@ footer .lang-buttons {
   justify-content: center;
   align-items: center;
 }
-@media (min-width: 1217px) and (max-width: 4000px) {
-  footer .lang-buttons {
-    width: 17vw;
-  }
-}
 footer .eng-btn,
 footer .ch-btn,
 footer .ru-btn {
