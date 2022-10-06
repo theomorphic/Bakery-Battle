@@ -9,24 +9,24 @@ ul {
 }
 ul li {
   list-style: none;
-  width: 200px;
+  width: 10.4vw;
   border-radius: 10%;
 }
 ul li a {
   display: block;
-  padding: 5px;
+  padding: 0.5vh;
   text-align: center;
   color: black;
   transition: 0.5s;
   text-decoration: none;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 1.9vh;
   letter-spacing: 1px;
 }
 
 .slide {
   position: absolute;
-  width: 200px;
+  width: 10.4vw;
   height: 100%;
   top: 0;
   left: 0;
@@ -47,12 +47,12 @@ ul li:nth-child(1).active ~ .slide {
 }
 
 ul li:nth-child(2).active ~ .slide {
-  left: 200px;
+  left: 21.3vh;
   opacity: 1;
 }
 
 ul li:nth-child(3).active ~ .slide {
-  left: 400px;
+  left: 42.6vh;
   opacity: 1;
 }
 
@@ -74,6 +74,14 @@ html {
   font-size: 1.5vh;
   font-family: "Press Start 2P", cursive;
   background-color: bisque;
+}
+
+.ch_lng {
+  font-family: "Noto Sans SC", sans-serif;
+}
+
+.ch_size1 {
+  font-size: 2vh;
 }
 
 body {
@@ -250,9 +258,15 @@ main .the_start_button .start_btn {
   font-size: 1.7vh;
   text-transform: uppercase;
 }
+main .the_start_button .start_btn__ch {
+  font-size: 2vh;
+}
 main .the_start_button .start_btn:hover {
   font-size: 1.8vh;
   transition: all 0.4s ease;
+}
+main .the_start_button .start_btn__ch:hover {
+  font-size: 2.1vh;
 }
 main .the_start_button .start_btn:active {
   background-color: #765C3D;
