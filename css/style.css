@@ -253,6 +253,67 @@ main .area-wrapper #area .box:hover {
 main .area-wrapper #area .box:active {
   background-color: #765C3D;
 }
+@media (min-width: 641px) and (max-width: 707px) {
+  main .area-wrapper #area {
+    width: 29vh;
+    height: 29vh;
+  }
+  main .area-wrapper #area .box {
+    width: 9.6vh;
+    height: 9.6vh;
+  }
+}
+@media (min-width: 574px) and (max-width: 640px) {
+  main .area-wrapper #area {
+    width: 26vh;
+    height: 26vh;
+  }
+  main .area-wrapper #area .box {
+    width: 8.6vh;
+    height: 8.6vh;
+  }
+}
+@media (min-width: 507px) and (max-width: 573px) {
+  main .area-wrapper #area {
+    width: 23vh;
+    height: 23vh;
+  }
+  main .area-wrapper #area .box {
+    width: 7.6vh;
+    height: 7.6vh;
+    font-size: 2.6vh;
+  }
+}
+@media (min-width: 441px) and (max-width: 508px) {
+  main .area-wrapper #area {
+    width: 20vh;
+    height: 20vh;
+  }
+  main .area-wrapper #area .box {
+    width: 6.6vh;
+    height: 6.6vh;
+  }
+}
+@media (min-width: 374px) and (max-width: 440px) {
+  main .area-wrapper #area {
+    width: 17vh;
+    height: 17vh;
+  }
+  main .area-wrapper #area .box {
+    width: 5.6vh;
+    height: 5.6vh;
+  }
+}
+@media (min-width: 320px) and (max-width: 375px) {
+  main .area-wrapper #area {
+    width: 14vh;
+    height: 14vh;
+  }
+  main .area-wrapper #area .box {
+    width: 4.6vh;
+    height: 4.6vh;
+  }
+}
 
 .thebuttons {
   width: 100%;
